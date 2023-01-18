@@ -1,0 +1,71 @@
+*,*::before,*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+
+body {
+  background-color: #0B2434;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background-color: #f5f5f5;
+  width: 320px;
+  height: 320px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 34px;
+}
+main h1 {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #2B283A;
+}
+main p {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  color: #4A4E74;
+}
+main .dice {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  margin: 25px 0;
+  gap: 18px;
+}
+.dice .die {
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #2B283A;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.dice .die.isHeld {
+  background-color: #59E391;
+}
+main button {
+  display: block;
+  width: 92px;
+  margin: auto;
+  height: 36px;
+  background-color: #5035FF;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
